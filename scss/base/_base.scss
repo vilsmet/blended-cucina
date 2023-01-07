@@ -1,0 +1,25 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $primary-text;
+  background-color: $primary-background;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 414px;
+  @media screen and (min-width: 1023px) {
+    width: 1023px;
+  }
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
+  
+}
+.section {
+  padding: 100px 0;
+}

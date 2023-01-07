@@ -1,0 +1,52 @@
+.sauces {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 180px;
+}
+.sauce-pic-box {
+  position: relative;
+  width: 349px;
+  height: 349px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sauce-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sauce-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.22;
+  margin-bottom: 16px;
+}
+.sauce-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  width: 443px;
+}
+.sauce-button {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text);
+  background-color: rgba(188, 26, 26, 0.2);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 57px;
+}
+.sauces .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+.sauces .item:not(:last-child) {
+  margin-bottom: 0px;
+}
+.sauces .item:nth-of-type(2n + 1) {
+  flex-direction: row-reverse;
+}

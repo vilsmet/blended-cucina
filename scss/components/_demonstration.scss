@@ -1,0 +1,24 @@
+.demonstration {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.demonstration .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.demonstration .video {
+  position: relative;
+  margin-bottom: 16px;
+}
+.demonstration .video-start {
+  position: absolute;
+  top: 119px;
+}
+.demonstration .video-label {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.22;
+}

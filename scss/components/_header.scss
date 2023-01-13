@@ -31,7 +31,32 @@
   color: $primary-text;
   background: transparent;
   padding: 10px 33px;
+  
+  // &.js-open-menu{
+  //   color :#F3F3F3;
+
+  // }
 }
+.header__button{
+  color :#F3F3F3;
+  background: transparent;
+  border: none;
+}
+.header__icon{
+
+   @media screen and(min-width: 1023px){
+    display: none;    
+  }
+}
+.header__nav{
+  @media screen and(max-width: 1022px){
+    display: none;    
+  }
+}
+// .header__icon-menu {
+//   
+// }
+
 .js-menu-container {
   position: fixed;
   top: 92px;
@@ -43,4 +68,14 @@
 }
 .js-menu-container.is-open {
   transform: translateX(0);
+  
+}
+.header__icon-menu,
+.header__icon-close{
+  fill: currentColor;
+  border: transparent;
+  display: none;
+  &.is-open{
+    display: block;
+  }
 }

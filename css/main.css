@@ -325,6 +325,24 @@ img {
   padding: 10px 33px;
 }
 
+.header__button {
+  color: #F3F3F3;
+  background: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 1023px) {
+  .header__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .header__nav {
+    display: none;
+  }
+}
+
 .js-menu-container {
   position: fixed;
   top: 92px;
@@ -337,6 +355,17 @@ img {
 
 .js-menu-container.is-open {
   transform: translateX(0);
+}
+
+.header__icon-menu,
+.header__icon-close {
+  fill: currentColor;
+  border: transparent;
+  display: none;
+}
+.header__icon-menu.is-open,
+.header__icon-close.is-open {
+  display: block;
 }
 
 .logo {

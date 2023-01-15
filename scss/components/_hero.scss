@@ -1,7 +1,10 @@
 .hero2 {
   position: relative;
   display: flex;
-  padding: 72px 0;
+  padding: 52px 0;
+  @media screen and (min-width: 1280px) {
+    padding: 72px 0;
+  }
 }
 .hero {
   background-color: var(--background-color);
@@ -20,22 +23,50 @@
 }
 .hero .title {
   font-weight: 500;
-  font-size: 64px;
-  line-height: 1.22;
+  font-size: 30px;
+  line-height: 1.233;
   border-left: 1px solid var(--primary-text);
-  padding-left: 12px;
-  margin-top: 28px;
-  margin-bottom: 24px;
+  padding-left: 8px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 1280px) {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.22;
+    border-left: 1px solid var(--primary-text);
+    padding-left: 12px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
 }
 .hero .promo {
-  font-weight: 300;
-  font-weight: 36px;
-  line-height: 1.22;
-  margin-bottom: 48px;
+  position: relative;
+  font-weight: 400;
+  font-weight: 20px;
+  line-height: 1.125;
+  margin-bottom: 228px;
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 300;
+    font-weight: 36px;
+    line-height: 1.22;
+    margin-bottom: 48px;
+  }
 }
 .hero .promo-extra {
   font-weight: 900;
   color: rgba(188, 26, 26, 0.71);
+}
+.promo-img {
+  fill: #F3F3F3;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  
+}
+.promo-img2 {
+  position: absolute;
+  top: 40px;
+  right: 0;
 }
 .hero .button {
   padding: 20px 84px;

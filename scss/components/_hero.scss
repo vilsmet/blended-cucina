@@ -1,8 +1,8 @@
 .hero2 {
-  position: relative;
-  display: flex;
-  padding: 52px 0;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1023px) {
+    position: relative;
+    display: flex;
+    padding: 52px 0;
     padding: 72px 0;
   }
 }
@@ -19,6 +19,7 @@
   padding-bottom: 71px;
 }
 .hero .left {
+  position: relative;
   margin-right: auto;
 }
 .hero .title {
@@ -27,27 +28,28 @@
   line-height: 1.233;
   border-left: 1px solid var(--primary-text);
   padding-left: 8px;
+  margin-top: 52px;
   margin-bottom: 16px;
-  @media screen and (min-width: 1280px) {
-    font-weight: 500;
+  @media screen and (min-width: 1023px) {
     font-size: 64px;
     line-height: 1.22;
-    border-left: 1px solid var(--primary-text);
     padding-left: 12px;
     margin-top: 28px;
     margin-bottom: 24px;
   }
 }
 .hero .promo {
+
   position: relative;
+  font-family: Montserrat;
   font-weight: 400;
-  font-weight: 20px;
+  font-size: 16px;
   line-height: 1.125;
   margin-bottom: 228px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1023px) {
     font-weight: 300;
-    font-weight: 36px;
+    font-size: 36px;
     line-height: 1.22;
     margin-bottom: 48px;
   }
@@ -57,27 +59,39 @@
   color: rgba(188, 26, 26, 0.71);
 }
 .promo-img {
-  fill: #F3F3F3;
+  fill: #f3f3f3;
   position: absolute;
   left: 0;
-  top: 70px;
-  
+  top: 0px;
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
 }
 .promo-img2 {
   position: absolute;
-  top: 40px;
+  top: 0px;
   right: 0;
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
 }
 .hero .button {
-  padding: 20px 84px;
+  padding: 21px 148px;
   background-color: rgba(188, 26, 26, 0.2);
+  color: var(--primary-text);
   border: none;
   border-radius: 16px;
-  color: var(--primary-text);
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.233;
-  margin-bottom: 48px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 20;
+  line-height: 1.2;
+  @media screen and (min-width: 1023px) {
+    padding: 20px 84px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.233;
+    margin-bottom: 48px;
+  }
 }
 .hero .count {
   display: flex;
@@ -131,23 +145,37 @@
 }
 .hero .right {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 503px;
+  justify-content: center;
+  margin-top: 24px;
+  @media screen and (min-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 503px;
+  }
 }
 .hero .social-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  @media screen and (min-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 .social-icons .item {
   fill: white;
   color: white;
   display: block;
 }
 .social-icons .item:not(:last-child) {
-  margin-bottom: 35px;
+  margin-right: 20px;
+  @media screen and (min-width: 1023px) {
+    margin-bottom: 35px;
+    margin-right: 0;
+  }
 }
 .hero .fill {
   fill: white;

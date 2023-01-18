@@ -19,7 +19,6 @@
     <title>Cucina</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body>
     <main>
       <section class="hero">
@@ -45,10 +44,9 @@
                     </li>
                   </ul>
                 </div>
-                <a href=""><button class="header-button" type="button">Contact us</button></a>
-                
-                <div class="js-menu-container">
+                <button class="header-button" type="button">Contact us</button>
 
+                <div class="js-menu-container">
                   <ul class="header__mobile-menu">
                     <li class="item">
                       <a class="start" href="">Home</a>
@@ -63,10 +61,11 @@
                       <a class="start" href="">Gallery</a>
                     </li>
                     <li class="item">
-                      <a href=""><button class="header__mobile-button" type="button">Contact us</button> </a>
-                      </li>
+                      <button class="header__mobile-button" type="button">
+                        Contact us
+                      </button>
+                    </li>
                   </ul>
-                  
                 </div>
               </nav>
               <button
@@ -103,9 +102,13 @@
                 We know, <br />
                 you will <span class="promo-extra">love</span> our product
               </h2>
-              <img class="promo-img" src="./images/promo-veg.svg" alt="">
-              <img class="promo-img2" src="./images/ketchup-mobile.png" alt="" >
-              <button class="button">Buy now</button>
+              <img class="promo-img" src="./images/promo-veg.svg" alt="" />
+              <img
+                class="promo-img2"
+                src="./images/ketchup-mobile.png"
+                alt=""
+              />
+              <button data-modal-open class="button">Buy now</button>
               <p class="count">
                 14<span class="info">different tastes</span
                 ><span class="count2">31</span
@@ -116,9 +119,9 @@
               </p>
             </div>
             <div class="right">
-              <div >
-                <img class="middle"
-                  class="image"
+              <div>
+                <img
+                  class="middle image"
                   src="./images/tomato1.png"
                   alt=""
                   width="432"
@@ -148,14 +151,12 @@
                   </li>
                   <li class="item">
                     <a href="">
-                      <a href="">
-                        <img
-                          src="./images/twitter.svg"
-                          alt=""
-                          width="24"
-                          height="20"
-                        />
-                      </a>
+                      <img
+                        src="./images/twitter.svg"
+                        alt=""
+                        width="24"
+                        height="20"
+                      />
                     </a>
                   </li>
                 </ul>
@@ -164,6 +165,7 @@
           </div>
         </div>
       </section>
+
       <!-- <section class="section">
         <ul class="sauces">
           <li class="item">
@@ -274,9 +276,9 @@
         <div class="container">
           <img src="./images/tomato-garden.jpg" alt="" width="1038" />
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <ul class="footer-alignment">
           <li>
@@ -328,14 +330,12 @@
               </li>
               <li class="item">
                 <a href="">
-                  <a href="">
-                    <img
-                      src="./images/twitter.svg"
-                      alt=""
-                      width="24"
-                      height="20"
-                    />
-                  </a>
+                  <img
+                    src="./images/twitter.svg"
+                    alt=""
+                    width="24"
+                    height="20"
+                  />
                 </a>
               </li>
             </ul>
@@ -350,12 +350,119 @@
         </div>
       </div>
     </footer> -->
-        <script
+
+    <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">Your ordering</h2>
+        <h3 class="modal__contacts">Contacts</h3>
+        <form autocomplete="on">
+          <div class="modal__form-field">
+            <label class="modal__label" for="name">Surname</label>
+            <input
+              placeholder="Krutas"
+              class="modal__input"
+              type="text"
+              name="name"
+              id="name"
+              autofocus
+            />
+            <!-- <svg class="modal__icon" width="12" height="12">
+              <use href="./images/icons.svg#man"></use>
+            </svg> -->
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__label" for="name">Name</label>
+            <input
+              placeholder="Yuliia"
+              class="modal__input"
+              type="text"
+              name="name"
+              id="name"
+              autofocus
+            />
+            <!-- <svg class="modal__icon" width="12" height="12">
+              <use href="./images/icons.svg#man"></use>
+            </svg> -->
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__label" for="phone">Telephone</label>
+            <input
+              placeholder="+380"
+              class="modal__input"
+              type="tel"
+              name="phone"
+              id="phone"
+            />
+            <!-- <svg class="modal__icon" width="13" height="13">
+              <use href="./images/icons.svg#phone"></use>
+            </svg> -->
+          </div>
+          
+          <div class="modal__form-field">
+            <label class="modal__label" for="city">City</label>
+            <select class="modal__input" name="" id="city">
+              <optgroup label="city">
+                <option value="">Kyiv</option>
+                <option value="">Lviv</option>
+                <option value="">Odesa</option>
+              </optgroup>
+            </select>
+            <h3 class="modal__contacts">Delivery</h3>
+            <div class="modal__delivery">
+              <span class="modal__delivery-left">Delivery to department of Nova Poshta</span><span class="modal__delivery-right">Delivery by courier of Nova Poshta</span>
+            </div>
+            <h3 class="modal__contacts">Payment method</h3>
+
+            <!-- <input class="modal__input" type="optgroup" name="city" id="city" /> -->
+
+            <!-- <svg class="modal__icon" width="15" height="12">
+              <use href="./images/icons.svg#letter"></use>
+            </svg> -->
+          </div>
+          <!-- <div class="modal__text">
+            <label class="modal__label" for="comment">Коментар</label>
+            <textarea
+              class="modal__textarea"
+              placeholder="Введіть текст"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div> -->
+          <div class="modal__conditions">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="conditions"
+              id="conditions"
+            />
+            <label class="modal__checkbox-label" for="conditions"
+              >Do not call to confirm
+            </label>
+            <svg class="modal__check" width="16" height="16">
+              <use href="./images/icons.svg#check"></use>
+            </svg>
+          </div>
+          <div class="modal__button-field">
+            <button type="submit" class="modal__button">Відправити</button>
+          </div>
+        </form>
+        <button data-modal-close class="modal__close">
+          <svg class="modal__button-close" width="32" height="32">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile.js"></script>
   </body>
 </html>

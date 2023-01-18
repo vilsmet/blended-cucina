@@ -853,19 +853,20 @@ img {
   top: 0;
   left: 50%;
   width: 100%;
-  max-width: 450px;
+  max-width: 414px;
   height: 1262px;
   background-color: #100f0f;
-  transform: translate(-50%, 0) translate(0%) scale(100%) rotate(0);
+  transform: translate(-50%, 0) translate(0%) scale(100%);
   opacity: 1;
   transition: transform 250ms linear, opacity 250ms linear;
-  padding: 58px;
+  padding: 16px;
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 504px;
     max-width: 528px;
-    height: 800px;
+    height: 1262px;
+    padding: 59px;
   }
 }
 
@@ -888,7 +889,7 @@ img {
 }
 
 .modal__backdrop.modal__backdrop--is-hidden .modal {
-  transform: translate(-50%, -50%) translate(100%) scale(200%) rotate(720deg);
+  transform: translate(-50%, -50%) translate(-100%) scale(0%);
   opacity: 0;
 }
 
@@ -899,18 +900,22 @@ img {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.22;
+  margin-top: 60px;
 }
 
 .modal__input {
+  color: white;
   width: 100%;
   height: 40px;
   border: solid 1px rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 16px;
+  border: 1px solid white;
+  border-radius: 16px;
+  background-color: #100f0f;
   transition: border 250ms linear;
 }
 .modal__input:hover, .modal__input:focus {
-  border: solid 1px greenyellow;
   cursor: pointer;
 }
 .modal__input:focus-visible {
@@ -970,13 +975,18 @@ img {
   margin-bottom: 20px;
 }
 
-.modal__label {
+.modal__label,
+.modal__label2 {
   display: inline-block;
   font-size: 12px;
   line-height: 1.1667;
-  color: #f3f3f3;
+  color: white;
   margin-bottom: 12px;
-  letter-spacing: 0.01em;
+  margin-top: 20px;
+}
+
+.modal__label:first-child {
+  margin-top: 0;
 }
 
 .modal__textarea {
@@ -1031,27 +1041,31 @@ img {
 }
 
 .modal__button {
-  color: greenyellow;
+  font-family: Montserrat;
+  color: white;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  background-color: blueviolet;
+  background-color: rgba(188, 26, 26, 0.2);
   border-style: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 52px;
+  padding: 21px 145px;
   letter-spacing: 0.06em;
   margin-top: 30px;
+  border-radius: 16px;
   transition: background-color 250ms linear;
 }
-@media screen and (min-width: 1200px) {
-  .modal__button {
-    margin: 30px 124px 0;
-  }
-}
 .modal__button:hover, .modal__button:focus {
-  background-color: red;
+  background-color: rgba(188, 26, 26, 0.2);
   cursor: pointer;
+}
+
+.modal__button-order {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .modal__checkbox {
@@ -1137,11 +1151,13 @@ img {
 }
 
 .modal__delivery {
-  border: 1px solid #F3F3F3;
+  position: relative;
+  border: 1px solid #f3f3f3;
   border-radius: 16px;
 }
 
 .modal__delivery-left {
+  color: white;
   display: inline-block;
   width: 192px;
   font-family: Montserrat;
@@ -1153,6 +1169,7 @@ img {
 }
 
 .modal__delivery-right {
+  color: white;
   display: inline-block;
   width: 192px;
   font-family: Montserrat;
@@ -1161,4 +1178,42 @@ img {
   line-height: 1.125;
   text-align: center;
   padding: 8px 31px;
+}
+
+.modal__payments {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__check1 {
+  display: none;
+}
+
+.modal__check1:checked + .modal__delivery-left {
+  color: black;
+  background-color: white;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.modal__check1:checked + .modal__delivery-right {
+  color: black;
+  background-color: white;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.modal__payment-hidden {
+  display: flex;
+}
+
+.modal__payment-method {
+  margin-bottom: 22px;
+}
+
+.modal__comment {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 22px;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

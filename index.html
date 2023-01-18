@@ -369,22 +369,21 @@
             <!-- <svg class="modal__icon" width="12" height="12">
               <use href="./images/icons.svg#man"></use>
             </svg> -->
-          </div>
-          <div class="modal__form-field">
-            <label class="modal__label" for="name">Name</label>
+            <!-- </div>
+          <div class="modal__form-field"> -->
+            <label class="modal__label" for="name3">Name</label>
             <input
               placeholder="Yuliia"
               class="modal__input"
               type="text"
               name="name"
-              id="name"
-              autofocus
+              id="name3"
             />
             <!-- <svg class="modal__icon" width="12" height="12">
               <use href="./images/icons.svg#man"></use>
             </svg> -->
-          </div>
-          <div class="modal__form-field">
+            <!-- </div>
+          <div class="modal__form-field"> -->
             <label class="modal__label" for="phone">Telephone</label>
             <input
               placeholder="+380"
@@ -396,29 +395,83 @@
             <!-- <svg class="modal__icon" width="13" height="13">
               <use href="./images/icons.svg#phone"></use>
             </svg> -->
-          </div>
-          
-          <div class="modal__form-field">
+            <!-- </div>
+          <div class="modal__form-field"> -->
             <label class="modal__label" for="city">City</label>
-            <select class="modal__input" name="" id="city">
+            <select class="modal__input" name="city" id="city">
               <optgroup label="city">
                 <option value="">Kyiv</option>
                 <option value="">Lviv</option>
                 <option value="">Odesa</option>
               </optgroup>
             </select>
-            <h3 class="modal__contacts">Delivery</h3>
-            <div class="modal__delivery">
-              <span class="modal__delivery-left">Delivery to department of Nova Poshta</span><span class="modal__delivery-right">Delivery by courier of Nova Poshta</span>
+          </div>
+          <h3 class="modal__contacts">Delivery</h3>
+          <div class="modal__delivery">
+            <!-- <a href="" class="modal__delivery-left"
+              >Delivery to department of Nova Poshta</a
+            >
+            <a href="" class="modal__delivery-right"
+              >Delivery by courier of Nova Poshta</a
+            > -->
+            <div class="modal__payment-hidden">
+              <div>
+                <input
+                  class="modal__check1"
+                  type="radio"
+                  name="pay1"
+                  value=""
+                  id="credit"
+                />
+                <label class="modal__delivery-left" for="credit"
+                  >Delivery to department of Nova Poshta</label
+                >
+              </div>
+              <div>
+                <input
+                  class="modal__check1"
+                  type="radio"
+                  name="pay1"
+                  value=""
+                  id="cash"
+                />
+                <label class="modal__delivery-right" for="cash"
+                  >Delivery by courier of Nova Poshta</label
+                >
+              </div>
             </div>
-            <h3 class="modal__contacts">Payment method</h3>
+          </div>
+          <div>
+            <label class="modal__label2" for="department">Department</label>
+            <select class="modal__input" name="department" id="department">
+              <optgroup label="department">
+                <option value="">Department</option>
+                <option value="">Kitchen</option>
+                <option value="">Logistics</option>
+              </optgroup>
+            </select>
+          </div>
 
-            <!-- <input class="modal__input" type="optgroup" name="city" id="city" /> -->
+          <h3 class="modal__contacts">Payment method</h3>
+          <div class="modal__payments">
+            <div>
+              <input class="modal__payment-method" type="radio" name="pay" value="" id="credit2" />
+              <label for="credit2"
+                >Credit card (Visa, Mastercard, ApplePay)</label
+              >
+            </div>
+            <div>
+              <input class="modal__payment-method" type="radio" name="pay" value="" id="cash2" />
+              <label for="cash2">Cash on delivery</label>
+            </div>
+          </div>
+          <h4 class="modal__comment">Add a comment to the order</h4>
+          <!-- <input class="modal__input" type="optgroup" name="city" id="city" /> -->
 
-            <!-- <svg class="modal__icon" width="15" height="12">
+          <!-- <svg class="modal__icon" width="15" height="12">
               <use href="./images/icons.svg#letter"></use>
             </svg> -->
-          </div>
+
           <!-- <div class="modal__text">
             <label class="modal__label" for="comment">Коментар</label>
             <textarea
@@ -445,7 +498,7 @@
             </svg>
           </div>
           <div class="modal__button-field">
-            <button type="submit" class="modal__button">Відправити</button>
+            <button type="submit" class="modal__button">Buy now</button>
           </div>
         </form>
         <button data-modal-close class="modal__close">

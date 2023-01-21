@@ -22,7 +22,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -35,7 +35,8 @@ Sections
 */
 body {
   margin: 0; /* 1 */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -60,7 +61,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -79,7 +80,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -153,9 +155,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -208,7 +210,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -383,8 +385,8 @@ img {
   display: flex;
   flex-direction: column;
   position: fixed;
-  z-index: 1;
-  top: 0px;
+  z-index: 11;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -484,7 +486,12 @@ img {
 .hero {
   background-color: var(--background-color);
   margin: 0 auto;
-  background-image: linear-gradient(228.52deg, rgba(111, 102, 102, 0.9) 4.71%, rgba(16, 15, 15, 0.9) 39.77%, rgba(16, 15, 15, 0.9) 44.21%);
+  background-image: linear-gradient(
+    228.52deg,
+    rgba(111, 102, 102, 0.9) 4.71%,
+    rgba(16, 15, 15, 0.9) 39.77%,
+    rgba(16, 15, 15, 0.9) 44.21%
+  );
   padding-bottom: 71px;
 }
 
@@ -712,7 +719,7 @@ img {
   transform: translateY(-50%);
   height: 78px;
   width: 1px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 .count-list__item {
@@ -904,7 +911,7 @@ img {
   color: #fff;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 .modal {
@@ -974,7 +981,8 @@ img {
   background-color: #100f0f;
   transition: border 250ms linear;
 }
-.modal__input:hover, .modal__input:focus {
+.modal__input:hover,
+.modal__input:focus {
   cursor: pointer;
 }
 .modal__input:focus-visible {
@@ -1012,7 +1020,8 @@ img {
   align-items: center;
   justify-content: center;
 }
-.modal__close:hover, .modal__close:focus {
+.modal__close:hover,
+.modal__close:focus {
   color: blueviolet;
 }
 
@@ -1060,7 +1069,8 @@ img {
   letter-spacing: 0.01em;
   transition: border 250ms linear;
 }
-.modal__textarea:focus, .modal__textarea:hover {
+.modal__textarea:focus,
+.modal__textarea:hover {
   border: 1px solid greenyellow;
   cursor: pointer;
 }
@@ -1090,7 +1100,7 @@ img {
   position: relative;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: greenyellow;
 }
 
@@ -1115,7 +1125,8 @@ img {
   border-radius: 16px;
   transition: background-color 250ms linear;
 }
-.modal__button:hover, .modal__button:focus {
+.modal__button:hover,
+.modal__button:focus {
   background-color: rgba(188, 26, 26, 0.2);
   cursor: pointer;
 }
@@ -1292,7 +1303,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #100F0F;
+  background-color: #100f0f;
   width: 530px;
   height: 756px;
   padding: 60px;
@@ -1318,4 +1329,4 @@ img {
 .modal-backdrop.modal__backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

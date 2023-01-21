@@ -324,11 +324,16 @@ img {
   line-height: 1.125;
   width: 160px;
   height: 40px;
+  cursor: pointer;
+  transition: scale 250ms linear;
   border: 1px solid #f3f3f3;
   border-radius: 16px;
   color: #f3f3f3;
   background: transparent;
   padding: 10px 33px;
+}
+.header-button:active {
+  scale: 0.8;
 }
 @media screen and (max-width: 1023px) {
   .header-button {
@@ -1260,4 +1265,47 @@ img {
   line-height: 140%;
   margin-bottom: 22px;
   text-decoration: underline;
+}
+
+.modal-backdrop {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+.modal2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #100F0F;
+  width: 530px;
+  height: 756px;
+  padding: 60px;
+}
+
+.modal-close2 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+}
+
+.contact-input {
+  width: 100%;
+}
+
+.textarea-input {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+.modal-backdrop.modal__backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */

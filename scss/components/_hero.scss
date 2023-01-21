@@ -45,7 +45,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.125;
-  margin-bottom: 228px;
+  margin-bottom: 235px;
 
   @media screen and (min-width: 1023px) {
     font-weight: 300;
@@ -59,10 +59,11 @@
   color: rgba(188, 26, 26, 0.71);
 }
 .promo-img {
-  fill: #f3f3f3;
+  fill: #3d3d3d;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
+  background-image: url(../../images/promo-veg.svg);
   @media screen and (min-width: 1023px) {
     display: none;
   }
@@ -83,8 +84,9 @@
   border-radius: 16px;
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 20;
+  font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 16px;
   @media screen and (min-width: 1023px) {
     padding: 20px 84px;
     font-weight: 500;
@@ -106,6 +108,9 @@
   font-size: 16px;
   line-height: 1.25;
   padding: 12px;
+  font-family:'Montserrat';
+  text-transform: lowercase;
+  width:121px;
 }
 .hero .info:first-child {
   border-right: 1px solid var(--primary-text);
@@ -114,7 +119,7 @@
   padding-left: 12px;
 }
 .middle {
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1022px) {
     display: none;
   }
 }
@@ -171,7 +176,7 @@
   display: block;
 }
 .social-icons .item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 24px;
   @media screen and (min-width: 1023px) {
     margin-bottom: 35px;
     margin-right: 0;
@@ -184,3 +189,44 @@
 // .hero__button {
 
 // }
+.count-list{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:43px;
+  font-family: 'Montserrat';
+  margin-top:36px;
+  margin-bottom: 43px;
+
+  &__after{
+position: relative;
+&::after{
+  content: "";
+  position: absolute;
+  top:50%;
+  right:-22px;
+  transform: translateY(-50%);
+  height:78px;
+  width:1px;
+  background-color: #F3F3F3;
+}
+  }
+
+  
+}
+.count-list__item{
+  display: flex;
+  align-items: center;
+  gap:12px;
+}
+.count-list__number{
+  font-size: 39px;
+  font-weight:600;
+  line-height: 1.22;
+ 
+}
+.count-list__text{
+  line-height: 1.25;
+}
+
+

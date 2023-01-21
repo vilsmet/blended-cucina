@@ -503,7 +503,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.125;
-  margin-bottom: 228px;
+  margin-bottom: 235px;
 }
 @media screen and (min-width: 1023px) {
   .hero .promo {
@@ -520,10 +520,11 @@ img {
 }
 
 .promo-img {
-  fill: #f3f3f3;
+  fill: #3d3d3d;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
+  background-image: url(../../images/promo-veg.svg);
 }
 @media screen and (min-width: 1023px) {
   .promo-img {
@@ -550,8 +551,9 @@ img {
   border-radius: 16px;
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 20;
+  font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 1023px) {
   .hero .button {
@@ -577,6 +579,9 @@ img {
   font-size: 16px;
   line-height: 1.25;
   padding: 12px;
+  font-family: "Montserrat";
+  text-transform: lowercase;
+  width: 121px;
 }
 
 .hero .info:first-child {
@@ -587,7 +592,7 @@ img {
   padding-left: 12px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1022px) {
   .middle {
     display: none;
   }
@@ -658,7 +663,7 @@ img {
 }
 
 .social-icons .item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 24px;
 }
 @media screen and (min-width: 1023px) {
   .social-icons .item:not(:last-child) {
@@ -670,6 +675,45 @@ img {
 .hero .fill {
   fill: white;
   outline: 1px solid red;
+}
+
+.count-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 43px;
+  font-family: "Montserrat";
+  margin-top: 36px;
+  margin-bottom: 43px;
+}
+.count-list__after {
+  position: relative;
+}
+.count-list__after::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  transform: translateY(-50%);
+  height: 78px;
+  width: 1px;
+  background-color: #F3F3F3;
+}
+
+.count-list__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.count-list__number {
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.count-list__text {
+  line-height: 1.25;
 }
 
 .sauces {

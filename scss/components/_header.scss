@@ -89,6 +89,8 @@
 // }
 
 .js-menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   z-index: 1;
   top: 0px;
@@ -126,11 +128,11 @@
   margin-bottom: 28px;
   padding: 0;
 }
-.header__mobile-menu .item:last-child {
-  font-size: 16px;
-  line-height: 1.25;
-  margin-top: 12px;
-}
+// .header__mobile-menu .item:last-child {
+//   font-size: 16px;
+//   line-height: 1.25;
+//   margin-top: 12px;
+// }
 .header__mobile-button {
   font-weight: 800;
   font-size: 16px;
@@ -142,4 +144,17 @@
   color: $primary-text;
   background: transparent;
   padding: 10px 33px;
+}
+.mobile__button2 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.125;
+  display: block;
+  color: white;
+  background-color: transparent;
+  padding: 10px 33px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 16px;
 }
